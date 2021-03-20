@@ -1,0 +1,18 @@
+server:
+  address: localhost
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/remember?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+#    username: root
+#    password: admin
+#  jpa:
+#    database: mysql
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#    generate-ddl: true # DDL 정의시 데이터베이스의 고유 기능을 사용 e.g. 테이블 생성, 삭제 등
+#    show-sql: true # API 호출시, SQL 문을 콘솔에 출력
+  h2:
+    console:
+      enabled: true
